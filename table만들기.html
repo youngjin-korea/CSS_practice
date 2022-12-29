@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table.a{
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+        table.b{
+            border: 1px solid red;
+            border-collapse: separate;
+            border-spacing: 10px 5px;
+            /* 셀들 간격 조정 */
+            /*  값이 하나면 사방에 적용*/
+            /*  값이 두개면 첫 번째 과우 두번째 상하 적용*/
+            /*  border-collapse: collapse; ㅡㄹㄹ 사용 하면 무용지물*/
+        }
+        caption.a{caption-side: top;}
+        caption.a{caption-side: bottm;}
+        td, th{border:1px solid green;}
+        .eh{empty-cells: hide;}
+        .es{empty-cells: show;}
+        </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr><th>이름</th> <th>HTML</th> <th>CSS</th></tr>
+        </thead>
+        <tfoot>
+            <tr> <th>합</th> <th>175</th> <th>169</th></tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>황기태</td>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>황태</td>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>이병은</td>
+                <td class="eh">80</td>
+                <td class="eh">70</td>
+            </tr>
+            
+</body>
+</html>
